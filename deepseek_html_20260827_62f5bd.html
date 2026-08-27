@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NRmusic • Portal Belajar & Diskusi Desain Web</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome 6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Google Fonts: Inter & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- ==================== HEADER / NAVBAR ==================== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-music"></i>
+                <span>NR</span>
+                <small>music</small>
+            </div>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero" class="active">Beranda</a>
+                <a href="#learn">Belajar</a>
+                <a href="#discuss">Diskusi</a>
+                <a href="#gallery">Galeri</a>
+                <a href="#team">Tim</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn-outline" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn-primary" id="joinBtn">Gabung</button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="badge"><i class="fas fa-headphones"></i> #1 Portal Desain Web</span>
+                <h1>Belajar &amp; Diskusi <br /><span class="gradient-text">Desain Web</span> Dengan Irama</h1>
+                <p>
+                    NRmusic adalah ruang kolaboratif untuk mempelajari HTML, CSS, JavaScript, dan JSON. 
+                    Dari pemula hingga mahir, semua bisa berkembang bersama dalam harmoni.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#learn" class="btn-primary"><i class="fas fa-graduation-cap"></i> Mulai Belajar</a>
+                    <a href="#discuss" class="btn-outline"><i class="fas fa-comments"></i> Buka Diskusi</a>
+                </div>
+                <div class="hero-stats">
+                    <div><strong>2.5k+</strong> <span>Member Aktif</span></div>
+                    <div><strong>156</strong> <span>Topik Diskusi</span></div>
+                    <div><strong>24/7</strong> <span>Komunitas</span></div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img
+                src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop&crop=center&auto=format"
+                alt="Tim coding dan diskusi desain web"
+                loading="lazy"
+                />
+                <div class="floating-card card-1"><i class="fas fa-html5"></i> HTML5</div>
+                <div class="floating-card card-2"><i class="fas fa-css3-alt"></i> CSS3</div>
+                <div class="floating-card card-3"><i class="fab fa-js"></i> JS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== LEARN SECTION ==================== -->
+    <section class="learn" id="learn">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Materi</span>
+                <h2>Jalur Belajar <span class="gradient-text">Terstruktur</span></h2>
+                <p>Kurikulum praktis dari dasar hingga mahir, diperbarui setiap bulan.</p>
+            </div>
+
+            <div class="learn-grid" id="learnGrid">
+                <!-- diisi oleh JS dari JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DISCUSS SECTION ==================== -->
+    <section class="discuss" id="discuss">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge"><i class="fas fa-comments"></i> Forum</span>
+                <h2>Diskusi <span class="gradient-text">Interaktif</span></h2>
+                <p>Tanyakan, jawab, dan bagikan pengalaman seputar desain web.</p>
+            </div>
+
+            <div class="discuss-grid" id="discussGrid">
+                <!-- diisi oleh JS dari JSON -->
+            </div>
+
+            <div class="discuss-cta">
+                <button class="btn-primary" id="newTopicBtn"><i class="fas fa-plus"></i> Buat Topik Baru</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALLERY SECTION ==================== -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge"><i class="fas fa-images"></i> Inspirasi</span>
+                <h2>Galeri <span class="gradient-text">Desain</span></h2>
+                <p>Karya terbaik dari komunitas dan referensi desain modern.</p>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- diisi oleh JS dari JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TEAM SECTION ==================== -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge"><i class="fas fa-users"></i> Penggerak</span>
+                <h2>Tim <span class="gradient-text">NRmusic</span></h2>
+                <p>Para mentor dan pengembang di balik portal belajar ini.</p>
+            </div>
+
+            <div class="team-grid" id="teamGrid">
+                <!-- diisi oleh JS dari JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo"><i class="fas fa-music"></i> NR <small>music</small></div>
+                    <p>Membangun generasi kreator web yang kolaboratif dan inovatif.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigasi</h4>
+                    <a href="#hero">Beranda</a>
+                    <a href="#learn">Belajar</a>
+                    <a href="#discuss">Diskusi</a>
+                    <a href="#gallery">Galeri</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Komunitas</h4>
+                    <a href="#">Kode Etik</a>
+                    <a href="#">Kontribusi</a>
+                    <a href="#">Event</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Tetap Terhubung</h4>
+                    <p>Dapatkan update materi dan diskusi terbaru.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Email kamu" required />
+                        <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NRmusic. Dibuat dengan <i class="fas fa-heart" style="color:#dc2626;"></i> untuk komunitas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script src="js/main.js"></script>
+</body>
+</html>
